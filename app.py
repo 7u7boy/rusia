@@ -15,9 +15,9 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def database_url():
     url = os.environ.get("DATABASE_URL", "sqlite:///" + os.path.join(BASE_DIR, "local.db"))
-    # Railway / Heroku dan "postgres://", SQLAlchemy necesita "postgresql://"
-    if url.startswith("postgres://"):
-        url = "postgresql://" + url[len("postgres://"):]
+    for prefix in ("postgres://", "postgresql://"):
+        if url.startswith(prefix):
+            url = "postgresql+psycopg://" + url[len(prefix):]
     return url
 
 
