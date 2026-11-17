@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1f3fae">
+<meta name="description" content="Practica ruso nivel A1: vocabulario con audio, los 6 casos, verbos y oraciones. Con tu progreso guardado.">
+<title>Ruso A1 · Práctica</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%231f3fae'/><text x='32' y='43' font-family='Arial' font-weight='700' font-size='30' fill='white' text-anchor='middle'>Ру</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="#/"><span class="logo">Ру</span><span class="brand-t">Ruso A1<small>Práctica</small></span></a>
+    <nav class="nav" id="nav">
+      <a href="#/" data-r="">Inicio</a>
+      <a href="#/practicar" data-r="practicar">Practicar</a>
+      <a href="#/referencia" data-r="referencia">Referencia</a>
+      <a href="#/progreso" data-r="progreso">Mi progreso</a>
+    </nav>
+    <div id="userbox"></div>
+  </div>
+</header>
+
+<main id="view" class="wrap" tabindex="-1"></main>
+
+<nav class="tabbar" id="tabbar">
+  <a href="#/" data-r=""><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Inicio</a>
+  <a href="#/practicar" data-r="practicar"><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5z M8 8h8 M8 12h8 M8 16h5"/></svg>Practicar</a>
+  <a href="#/referencia" data-r="referencia"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4z M4 10h16 M10 10v9"/></svg>Referencia</a>
+  <a href="#/progreso" data-r="progreso"><svg viewBox="0 0 24 24"><path d="M5 20V10 M12 20V4 M19 20v-7"/></svg>Progreso</a>
+</nav>
+
+<div class="modal hidden" id="modal" role="dialog" aria-modal="true">
+  <div class="modal-card" id="modalcard"></div>
+</div>
+<div class="toast hidden" id="toast"></div>
+
+<footer class="foot">Vocabulario y ejercicios basados en el curso <i>Точка Ру A1</i>. Audio generado por computadora: ante la duda, sigue la pronunciación de tu profesor.</footer>
+<script src="/app.js"></script>
+</body>
+</html>
