@@ -14,6 +14,7 @@ const UNITS = {
   "2": { t: "Mi mundo", d: "Objetos, familia, gustos, cultura y deportes" },
   "3": { t: "Casa y carácter", d: "La casa, muebles, adjetivos, colores y modismos" },
   "4": { t: "Comida y moda", d: "Comida, restaurante, ropa y estaciones" },
+  "5": { t: "Mi día", d: "La hora, rutina diaria, идти / ходить, в / на" },
 };
 const VMODES = [["listen-say", "🔊 Escuchar y decir"], ["listen", "🔊 Escuchar y elegir"], ["ru-es", "Ruso → Español"], ["es-ru", "Español → Ruso"], ["write", "✍️ Escribir"], ["flash", "Tarjetas"]];
 
